@@ -1,0 +1,136 @@
+       *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color:  #121212;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        nav{
+            background-color:  #1f1f1f;
+            justify-content: center;
+            height: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            
+        }
+
+        nav a{
+            color: white;
+            display: flex;
+            font-size: 18px;
+            padding-left:40px ;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        nav a:hover{
+            color: #f9a826;
+        }
+
+        nav a:active{
+            transform: scale(0.97);
+        }
+
+        header{
+            background: linear-gradient(to right, #2b5876, #4e4376);
+            text-align: center;
+            padding-bottom: 30px;
+        
+        }
+
+        header h1{
+            padding-top: 100px;
+            padding-bottom: 20px;
+            font-size: 40px;
+
+        }
+
+        header p{
+            padding-top: 10px;
+            padding-bottom: 30px;
+            font-size: 18px;
+        }
+
+        .profile-pic{
+            height: 180px;
+            width: 180px;
+            border-radius: 50%; 
+            
+        }
+
+        .about{
+            background-color: #121212;
+            height: 300px;    
+        }
+
+        .about h2{
+            text-align: center;
+            font-size: 30px;
+            color: #f9a826;
+            margin-bottom: 50px;
+            padding-top: 80px;      
+        }
+
+        .about p{
+            padding-left: 250px;
+            width: 850px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .skills, .projects {
+            background-color: #121212; 
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: 0 auto; 
+            border-radius: 10px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+            gap: 20px;
+            flex-wrap: wrap; 
+        }
+
+        .skills h2,
+        #projects h2 {
+            text-align: center;
+            font-size: 30px;
+            color: #f9a826;
+            margin-bottom: 30px;
+        }
+
+        .skills .card,
+        .projects .card {
+            margin: 10px;
+        }
+
+        .card{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .card:hover{
+            cursor: pointer;
+            transform: scale(0.98);
+            transition: 0.15s;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.8);
+        }
+        
+        .projects .card {
+            width: 850px;
+        }
